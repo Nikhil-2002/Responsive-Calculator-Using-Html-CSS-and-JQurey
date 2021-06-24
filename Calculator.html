@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+<script
+  src="https://code.jquery.com/jquery-3.6.0.js"
+  integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+  crossorigin="anonymous"></script>
+
+<script src="calcy.js"></script>
+<link rel="stylesheet" type="text/css" href="calcystyle.css">
+
+	<title></title>
+</head>
+<body>
+	<img src="nf.jpg" id="log" align="right">
+	<div class="container" id="calcy">
+
+
+
+
+		
+			
+		
+
+		<form>
+		      <input type="text" id="box" style="background-color: #1f80c9">
+	    </form>
+		
+		
+			<table class="table-bordered" cellpadding="30" id="cool">
+				<tr>
+					<td onclick="c()"> AC </td>
+					<td onclick="Del()"> Del </td>
+					<td onclick="insert('*')" style="background-color:#cc5c11"> x </td>
+					<td onclick="insert('/')" style="background-color:#ba55d3"> ÷ </td>
+				</tr>
+				<tr>
+					<td onclick="insert('7')"> 7 </td>
+					<td onclick="insert('8')"> 8 </td>
+					<td onclick="insert('9')"> 9 </td>
+					<td onclick="insert('+')" style="background-color:#7db1b2"> + </td>
+				</tr>
+				<tr>
+					<td onclick="insert('4')"> 4 </td>
+					<td onclick="insert('5')"> 5 </td>
+					<td onclick="insert('6')"> 6 </td>
+					<td onclick="insert('-')" style="background-color:green"> - </td>
+				</tr>
+				<tr>
+					<td onclick="insert('1')"> 1 </td>
+					<td onclick="insert('3')"> 2 </td>
+					<td onclick="insert('3')"> 3 </td>
+					<td rowspan="2" onclick="eql()"style="background-color:#cc0000"> = </td>
+				</tr>
+				<tr>
+					<td colspan="2" onclick="insert(0)"> 0 </td>
+					<td onclick="insert('.')"> . </td>
+					
+				</tr>
+			</table>
+		<script>
+			$(document).ready(function(){
+
+				$("body").keyup(function(myobj){
+
+					if(myobj.keyCode==13)
+					{
+						eql();
+					}
+				})
+			})
+		</script>
+	</div>
+</body>
+</html>
+	

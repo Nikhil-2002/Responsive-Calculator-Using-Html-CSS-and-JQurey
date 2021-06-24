@@ -1,0 +1,25 @@
+body
+{
+	background-color: #000000;
+	color: white;
+
+}
+#box{
+	width: 287px;
+	height: 60px;
+}
+#log{
+	width: 81px;
+	height: 60px;
+	margin-left: 580px;
+    position: absolute;
+    left: -210px;
+
+}
+#calcy{
+
+	background-color: 
+}
+#cool{
+	font-size: 31px;	
+}
